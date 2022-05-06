@@ -1,0 +1,405 @@
+<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>sushi-lens</title><meta name="description" content="Documentation for sushi-lens"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">sushi-lens</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>sushi-lens </h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
+<a href="#su-sushi" id="su-sushi" style="color: inherit; text-decoration: none;">
+  <h1><code>su-sushi</code></h1>
+</a>
+<ul>
+<li><p>[Int] IBentoBoxV1</p>
+<ul>
+<li>[Ext] balanceOf</li>
+<li>[Ext] batch ($)</li>
+<li>[Ext] claimOwnership #</li>
+<li>[Ext] deploy ($)</li>
+<li>[Ext] deposit ($)</li>
+<li>[Ext] harvest #</li>
+<li>[Ext] masterContractApproved</li>
+<li>[Ext] masterContractOf</li>
+<li>[Ext] nonces</li>
+<li>[Ext] owner</li>
+<li>[Ext] pendingOwner</li>
+<li>[Ext] pendingStrategy</li>
+<li>[Ext] permitToken #</li>
+<li>[Ext] registerProtocol #</li>
+<li>[Ext] setMasterContractApproval #</li>
+<li>[Ext] setStrategy #</li>
+<li>[Ext] setStrategyTargetPercentage #</li>
+<li>[Ext] strategy</li>
+<li>[Ext] strategyData</li>
+<li>[Ext] toAmount</li>
+<li>[Ext] toShare</li>
+<li>[Ext] totals</li>
+<li>[Ext] transfer #</li>
+<li>[Ext] transferMultiple #</li>
+<li>[Ext] transferOwnership #</li>
+<li>[Ext] whitelistMasterContract #</li>
+<li>[Ext] whitelistedMasterContracts</li>
+<li>[Ext] withdraw #</li>
+</ul>
+</li>
+<li><p>[Int] IERC20</p>
+<ul>
+<li>[Ext] name</li>
+<li>[Ext] symbol</li>
+<li>[Ext] decimals</li>
+<li>[Ext] totalSupply</li>
+<li>[Ext] balanceOf</li>
+<li>[Ext] allowance</li>
+<li>[Ext] approve #</li>
+<li>[Ext] permit #</li>
+</ul>
+</li>
+<li><p>[Int] IGnosisSafe</p>
+<ul>
+<li>[Ext] getOwners</li>
+<li>[Ext] getThreshold</li>
+</ul>
+</li>
+<li><p>[Int] IOwnable</p>
+<ul>
+<li>[Ext] owner</li>
+<li>[Ext] renounceOwnership #</li>
+<li>[Ext] transferOwnership #</li>
+</ul>
+</li>
+<li><p>[Int] IMasterChef (IOwnable)</p>
+<ul>
+<li>[Ext] sushi</li>
+<li>[Ext] devaddr</li>
+<li>[Ext] bonusEndBlock</li>
+<li>[Ext] sushiPerBlock</li>
+<li>[Ext] sushiPerSecond</li>
+<li>[Ext] BONUS_MULTIPLIER</li>
+<li>[Ext] migrator</li>
+<li>[Ext] poolInfo</li>
+<li>[Ext] userInfo</li>
+<li>[Ext] totalAllocPoint</li>
+<li>[Ext] startBlock</li>
+<li>[Ext] poolLength</li>
+<li>[Ext] add #</li>
+<li>[Ext] set #</li>
+<li>[Ext] setMigrator #</li>
+<li>[Ext] migrate #</li>
+<li>[Ext] getMultiplier</li>
+<li>[Ext] pendingSushi</li>
+<li>[Ext] massUpdatePools #</li>
+<li>[Ext] updatePool #</li>
+<li>[Ext] deposit #</li>
+<li>[Ext] withdraw #</li>
+<li>[Ext] emergencyWithdraw #</li>
+<li>[Ext] dev #</li>
+</ul>
+</li>
+<li><p>[Int] IMasterChefV2</p>
+<ul>
+<li>[Ext] lpToken</li>
+<li>[Ext] poolInfo</li>
+</ul>
+</li>
+<li><p>[Int] IStrategy</p>
+<ul>
+<li>[Ext] skim #</li>
+<li>[Ext] harvest #</li>
+<li>[Ext] withdraw #</li>
+<li>[Ext] exit #</li>
+</ul>
+</li>
+<li><p>[Int] IUniswapV2Factory</p>
+<ul>
+<li>[Ext] feeTo</li>
+<li>[Ext] feeToSetter</li>
+<li>[Ext] migrator</li>
+<li>[Ext] getPair</li>
+<li>[Ext] allPairs</li>
+<li>[Ext] allPairsLength</li>
+<li>[Ext] createPair #</li>
+<li>[Ext] setFeeTo #</li>
+<li>[Ext] setFeeToSetter #</li>
+<li>[Ext] setMigrator #</li>
+</ul>
+</li>
+<li><p>[Int] IUniswapV2Pair</p>
+<ul>
+<li>[Ext] name</li>
+<li>[Ext] symbol</li>
+<li>[Ext] decimals</li>
+<li>[Ext] totalSupply</li>
+<li>[Ext] balanceOf</li>
+<li>[Ext] allowance</li>
+<li>[Ext] approve #</li>
+<li>[Ext] transfer #</li>
+<li>[Ext] transferFrom #</li>
+<li>[Ext] DOMAIN_SEPARATOR</li>
+<li>[Ext] PERMIT_TYPEHASH</li>
+<li>[Ext] nonces</li>
+<li>[Ext] permit #</li>
+<li>[Ext] MINIMUM_LIQUIDITY</li>
+<li>[Ext] factory</li>
+<li>[Ext] token0</li>
+<li>[Ext] token1</li>
+<li>[Ext] getReserves</li>
+<li>[Ext] price0CumulativeLast</li>
+<li>[Ext] price1CumulativeLast</li>
+<li>[Ext] kLast</li>
+<li>[Ext] mint #</li>
+<li>[Ext] burn #</li>
+<li>[Ext] swap #</li>
+<li>[Ext] skim #</li>
+<li>[Ext] sync #</li>
+<li>[Ext] initialize #</li>
+</ul>
+</li>
+<li><p>[Int] IUniswapV2Router01</p>
+<ul>
+<li>[Ext] factory</li>
+<li>[Ext] WETH</li>
+<li>[Ext] addLiquidity #</li>
+<li>[Ext] addLiquidityETH ($)</li>
+<li>[Ext] removeLiquidity #</li>
+<li>[Ext] removeLiquidityETH #</li>
+<li>[Ext] removeLiquidityWithPermit #</li>
+<li>[Ext] removeLiquidityETHWithPermit #</li>
+<li>[Ext] swapExactTokensForTokens #</li>
+<li>[Ext] swapTokensForExactTokens #</li>
+<li>[Ext] swapExactETHForTokens ($)</li>
+<li>[Ext] swapTokensForExactETH #</li>
+<li>[Ext] swapExactTokensForETH #</li>
+<li>[Ext] swapETHForExactTokens ($)</li>
+<li>[Ext] quote</li>
+<li>[Ext] getAmountOut</li>
+<li>[Ext] getAmountIn</li>
+<li>[Ext] getAmountsOut</li>
+<li>[Ext] getAmountsIn</li>
+</ul>
+</li>
+<li><p>[Int] IWethMaker</p>
+<ul>
+<li>[Ext] bridges</li>
+<li>[Ext] owner</li>
+<li>[Ext] withdraw #</li>
+<li>[Ext] burnPairs #</li>
+</ul>
+</li>
+<li><p>Multicall2</p>
+<ul>
+<li>[Pub] aggregate #</li>
+<li>[Pub] blockAndAggregate #</li>
+<li>[Pub] getBlockHash</li>
+<li>[Pub] getBlockNumber</li>
+<li>[Pub] getCurrentBlockCoinbase</li>
+<li>[Pub] getCurrentBlockDifficulty</li>
+<li>[Pub] getCurrentBlockGasLimit</li>
+<li>[Pub] getCurrentBlockTimestamp</li>
+<li>[Pub] getEthBalance</li>
+<li>[Pub] getLastBlockHash</li>
+<li>[Pub] tryAggregate #</li>
+<li>[Pub] tryBlockAndAggregate #</li>
+</ul>
+</li>
+</ul>
+<p> ($) = payable function</p>
+
+<a href="#-non-constant-function" id="-non-constant-function" style="color: inherit; text-decoration: none;">
+  <h1>= non-constant function</h1>
+</a>
+<p>11:44:03 sbacha Sams-MacBook-Pro /Users/sbacha/sushi-dao master
+$ clear
+11:44:15 sbacha Sams-MacBook-Pro /Users/sbacha/sushi-dao master
+$ surya describe src/*.sol</p>
+<ul>
+<li><p>[Int] IBentoBoxV1</p>
+<ul>
+<li>[Ext] balanceOf</li>
+<li>[Ext] batch ($)</li>
+<li>[Ext] claimOwnership #</li>
+<li>[Ext] deploy ($)</li>
+<li>[Ext] deposit ($)</li>
+<li>[Ext] harvest #</li>
+<li>[Ext] masterContractApproved</li>
+<li>[Ext] masterContractOf</li>
+<li>[Ext] nonces</li>
+<li>[Ext] owner</li>
+<li>[Ext] pendingOwner</li>
+<li>[Ext] pendingStrategy</li>
+<li>[Ext] permitToken #</li>
+<li>[Ext] registerProtocol #</li>
+<li>[Ext] setMasterContractApproval #</li>
+<li>[Ext] setStrategy #</li>
+<li>[Ext] setStrategyTargetPercentage #</li>
+<li>[Ext] strategy</li>
+<li>[Ext] strategyData</li>
+<li>[Ext] toAmount</li>
+<li>[Ext] toShare</li>
+<li>[Ext] totals</li>
+<li>[Ext] transfer #</li>
+<li>[Ext] transferMultiple #</li>
+<li>[Ext] transferOwnership #</li>
+<li>[Ext] whitelistMasterContract #</li>
+<li>[Ext] whitelistedMasterContracts</li>
+<li>[Ext] withdraw #</li>
+</ul>
+</li>
+<li><p>[Int] IERC20</p>
+<ul>
+<li>[Ext] name</li>
+<li>[Ext] symbol</li>
+<li>[Ext] decimals</li>
+<li>[Ext] totalSupply</li>
+<li>[Ext] balanceOf</li>
+<li>[Ext] allowance</li>
+<li>[Ext] approve #</li>
+<li>[Ext] permit #</li>
+</ul>
+</li>
+<li><p>[Int] IGnosisSafe</p>
+<ul>
+<li>[Ext] getOwners</li>
+<li>[Ext] getThreshold</li>
+</ul>
+</li>
+<li><p>[Int] IOwnable</p>
+<ul>
+<li>[Ext] owner</li>
+<li>[Ext] renounceOwnership #</li>
+<li>[Ext] transferOwnership #</li>
+</ul>
+</li>
+<li><p>[Int] IMasterChef (IOwnable)</p>
+<ul>
+<li>[Ext] sushi</li>
+<li>[Ext] devaddr</li>
+<li>[Ext] bonusEndBlock</li>
+<li>[Ext] sushiPerBlock</li>
+<li>[Ext] sushiPerSecond</li>
+<li>[Ext] BONUS_MULTIPLIER</li>
+<li>[Ext] migrator</li>
+<li>[Ext] poolInfo</li>
+<li>[Ext] userInfo</li>
+<li>[Ext] totalAllocPoint</li>
+<li>[Ext] startBlock</li>
+<li>[Ext] poolLength</li>
+<li>[Ext] add #</li>
+<li>[Ext] set #</li>
+<li>[Ext] setMigrator #</li>
+<li>[Ext] migrate #</li>
+<li>[Ext] getMultiplier</li>
+<li>[Ext] pendingSushi</li>
+<li>[Ext] massUpdatePools #</li>
+<li>[Ext] updatePool #</li>
+<li>[Ext] deposit #</li>
+<li>[Ext] withdraw #</li>
+<li>[Ext] emergencyWithdraw #</li>
+<li>[Ext] dev #</li>
+</ul>
+</li>
+<li><p>[Int] IMasterChefV2</p>
+<ul>
+<li>[Ext] lpToken</li>
+<li>[Ext] poolInfo</li>
+</ul>
+</li>
+<li><p>[Int] IStrategy</p>
+<ul>
+<li>[Ext] skim #</li>
+<li>[Ext] harvest #</li>
+<li>[Ext] withdraw #</li>
+<li>[Ext] exit #</li>
+</ul>
+</li>
+<li><p>[Int] IUniswapV2Factory</p>
+<ul>
+<li>[Ext] feeTo</li>
+<li>[Ext] feeToSetter</li>
+<li>[Ext] migrator</li>
+<li>[Ext] getPair</li>
+<li>[Ext] allPairs</li>
+<li>[Ext] allPairsLength</li>
+<li>[Ext] createPair #</li>
+<li>[Ext] setFeeTo #</li>
+<li>[Ext] setFeeToSetter #</li>
+<li>[Ext] setMigrator #</li>
+</ul>
+</li>
+<li><p>[Int] IUniswapV2Pair</p>
+<ul>
+<li>[Ext] name</li>
+<li>[Ext] symbol</li>
+<li>[Ext] decimals</li>
+<li>[Ext] totalSupply</li>
+<li>[Ext] balanceOf</li>
+<li>[Ext] allowance</li>
+<li>[Ext] approve #</li>
+<li>[Ext] transfer #</li>
+<li>[Ext] transferFrom #</li>
+<li>[Ext] DOMAIN_SEPARATOR</li>
+<li>[Ext] PERMIT_TYPEHASH</li>
+<li>[Ext] nonces</li>
+<li>[Ext] permit #</li>
+<li>[Ext] MINIMUM_LIQUIDITY</li>
+<li>[Ext] factory</li>
+<li>[Ext] token0</li>
+<li>[Ext] token1</li>
+<li>[Ext] getReserves</li>
+<li>[Ext] price0CumulativeLast</li>
+<li>[Ext] price1CumulativeLast</li>
+<li>[Ext] kLast</li>
+<li>[Ext] mint #</li>
+<li>[Ext] burn #</li>
+<li>[Ext] swap #</li>
+<li>[Ext] skim #</li>
+<li>[Ext] sync #</li>
+<li>[Ext] initialize #</li>
+</ul>
+</li>
+<li><p>[Int] IUniswapV2Router01</p>
+<ul>
+<li>[Ext] factory</li>
+<li>[Ext] WETH</li>
+<li>[Ext] addLiquidity #</li>
+<li>[Ext] addLiquidityETH ($)</li>
+<li>[Ext] removeLiquidity #</li>
+<li>[Ext] removeLiquidityETH #</li>
+<li>[Ext] removeLiquidityWithPermit #</li>
+<li>[Ext] removeLiquidityETHWithPermit #</li>
+<li>[Ext] swapExactTokensForTokens #</li>
+<li>[Ext] swapTokensForExactTokens #</li>
+<li>[Ext] swapExactETHForTokens ($)</li>
+<li>[Ext] swapTokensForExactETH #</li>
+<li>[Ext] swapExactTokensForETH #</li>
+<li>[Ext] swapETHForExactTokens ($)</li>
+<li>[Ext] quote</li>
+<li>[Ext] getAmountOut</li>
+<li>[Ext] getAmountIn</li>
+<li>[Ext] getAmountsOut</li>
+<li>[Ext] getAmountsIn</li>
+</ul>
+</li>
+<li><p>[Int] IWethMaker</p>
+<ul>
+<li>[Ext] bridges</li>
+<li>[Ext] owner</li>
+<li>[Ext] withdraw #</li>
+<li>[Ext] burnPairs #</li>
+</ul>
+</li>
+<li><p>Multicall2</p>
+<ul>
+<li>[Pub] aggregate #</li>
+<li>[Pub] blockAndAggregate #</li>
+<li>[Pub] getBlockHash</li>
+<li>[Pub] getBlockNumber</li>
+<li>[Pub] getCurrentBlockCoinbase</li>
+<li>[Pub] getCurrentBlockDifficulty</li>
+<li>[Pub] getCurrentBlockGasLimit</li>
+<li>[Pub] getCurrentBlockTimestamp</li>
+<li>[Pub] getEthBalance</li>
+<li>[Pub] getLastBlockHash</li>
+<li>[Pub] tryAggregate #</li>
+<li>[Pub] tryBlockAndAggregate #</li>
+</ul>
+</li>
+</ul>
+<p> ($) = payable function</p>
+
+<a href="#-non-constant-function-1" id="-non-constant-function-1" style="color: inherit; text-decoration: none;">
+  <h1>= non-constant function</h1>
+</a>
+</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li><li class=" tsd-kind-namespace"><a href="modules/IMasterChefV2.html">IMaster<wbr/>Chef<wbr/>V2</a></li><li class=" tsd-kind-namespace"><a href="modules/Multicall2.html">Multicall2</a></li><li class=" tsd-kind-namespace"><a href="modules/factories.html">factories</a></li><li class=" tsd-kind-namespace"><a href="modules/iBentoBoxSol.html">i<wbr/>Bento<wbr/>Box<wbr/>Sol</a></li><li class=" tsd-kind-namespace"><a href="modules/iMasterChefSol.html">i<wbr/>Master<wbr/>Chef<wbr/>Sol</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-reference"><a href="modules.html#IBentoBoxV1" class="tsd-kind-icon">IBento<wbr/>Box<wbr/>V1</a></li><li class="tsd-kind-reference"><a href="modules.html#IBentoBoxV1__factory" class="tsd-kind-icon">IBento<wbr/>Box<wbr/>V1__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IERC20__factory" class="tsd-kind-icon">IERC20__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IGnosisSafe__factory" class="tsd-kind-icon">IGnosis<wbr/>Safe__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IMasterChef" class="tsd-kind-icon">IMaster<wbr/>Chef</a></li><li class="tsd-kind-reference"><a href="modules.html#IMasterChefV2__factory" class="tsd-kind-icon">IMaster<wbr/>Chef<wbr/>V2__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IMasterChef__factory" class="tsd-kind-icon">IMaster<wbr/>Chef__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IOwnable" class="tsd-kind-icon">IOwnable</a></li><li class="tsd-kind-reference"><a href="modules.html#IOwnable__factory" class="tsd-kind-icon">IOwnable__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IStrategy__factory" class="tsd-kind-icon">IStrategy__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IUniswapV2Factory__factory" class="tsd-kind-icon">IUniswap<wbr/>V2<wbr/>Factory__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IUniswapV2Pair__factory" class="tsd-kind-icon">IUniswap<wbr/>V2<wbr/>Pair__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IUniswapV2Router01__factory" class="tsd-kind-icon">IUniswap<wbr/>V2<wbr/>Router01__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#IWethMaker__factory" class="tsd-kind-icon">IWeth<wbr/>Maker__factory</a></li><li class="tsd-kind-reference"><a href="modules.html#Multicall2__factory" class="tsd-kind-icon">Multicall2__factory</a></li><li class="tsd-kind-interface"><a href="interfaces/IERC20.html" class="tsd-kind-icon">IERC20</a></li><li class="tsd-kind-interface"><a href="interfaces/IGnosisSafe.html" class="tsd-kind-icon">IGnosis<wbr/>Safe</a></li><li class="tsd-kind-interface"><a href="interfaces/IMasterChefV2.html" class="tsd-kind-icon">IMaster<wbr/>Chef<wbr/>V2</a></li><li class="tsd-kind-interface"><a href="interfaces/IStrategy.html" class="tsd-kind-icon">IStrategy</a></li><li class="tsd-kind-interface"><a href="interfaces/IUniswapV2Factory.html" class="tsd-kind-icon">IUniswap<wbr/>V2<wbr/>Factory</a></li><li class="tsd-kind-interface"><a href="interfaces/IUniswapV2Pair.html" class="tsd-kind-icon">IUniswap<wbr/>V2<wbr/>Pair</a></li><li class="tsd-kind-interface"><a href="interfaces/IUniswapV2Router01.html" class="tsd-kind-icon">IUniswap<wbr/>V2<wbr/>Router01</a></li><li class="tsd-kind-interface"><a href="interfaces/IWethMaker.html" class="tsd-kind-icon">IWeth<wbr/>Maker</a></li><li class="tsd-kind-interface"><a href="interfaces/Multicall2.html" class="tsd-kind-icon">Multicall2</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
