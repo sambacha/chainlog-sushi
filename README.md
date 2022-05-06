@@ -1,63 +1,347 @@
-<h2> zen.foundry-template </h2>
+# `su-sushi`
 
-> a minimalist foundry boilerplate
++ [Int] IBentoBoxV1
+    - [Ext] balanceOf
+    - [Ext] batch ($)
+    - [Ext] claimOwnership #
+    - [Ext] deploy ($)
+    - [Ext] deposit ($)
+    - [Ext] harvest #
+    - [Ext] masterContractApproved
+    - [Ext] masterContractOf
+    - [Ext] nonces
+    - [Ext] owner
+    - [Ext] pendingOwner
+    - [Ext] pendingStrategy
+    - [Ext] permitToken #
+    - [Ext] registerProtocol #
+    - [Ext] setMasterContractApproval #
+    - [Ext] setStrategy #
+    - [Ext] setStrategyTargetPercentage #
+    - [Ext] strategy
+    - [Ext] strategyData
+    - [Ext] toAmount
+    - [Ext] toShare
+    - [Ext] totals
+    - [Ext] transfer #
+    - [Ext] transferMultiple #
+    - [Ext] transferOwnership #
+    - [Ext] whitelistMasterContract #
+    - [Ext] whitelistedMasterContracts
+    - [Ext] withdraw #
 
-<h3> template.script </h3>
+ + [Int] IERC20
+    - [Ext] name
+    - [Ext] symbol
+    - [Ext] decimals
+    - [Ext] totalSupply
+    - [Ext] balanceOf
+    - [Ext] allowance
+    - [Ext] approve #
+    - [Ext] permit #
 
-```shell
-#!/bin/sh
-GIT_AUTHOR_DATE="Fri, 01 Jan 2021 00:00:00 +0000" GIT_COMMITTER_DATE="Fri, 01 Jan 2021 00:00:00 +0000" git commit --allow-empty --allow-empty-message -m ''
-wget https://raw.githubusercontent.com/sambacha/zen-foundry-template/master/.gitignore
-wget https://raw.githubusercontent.com/sambacha/zen-foundry-template/master/.gitattributes
-wget https://raw.githubusercontent.com/sambacha/zen-foundry-template/master/.editorconfig
-wget https://raw.githubusercontent.com/sambacha/zen-foundry-template/master/justfile
-mkdir -p src
-mkdir -p test
-mkdir -p .github/workflows
-forge config > foundry.toml
-touch .dapprc
-touch .env
-git commit -n -m "feat(release): inital commit"
-```
+ + [Int] IGnosisSafe
+    - [Ext] getOwners
+    - [Ext] getThreshold
 
-## Example Contract Documentation
+ + [Int] IOwnable
+    - [Ext] owner
+    - [Ext] renounceOwnership #
+    - [Ext] transferOwnership #
 
-# Contract
+ + [Int] IMasterChef (IOwnable)
+    - [Ext] sushi
+    - [Ext] devaddr
+    - [Ext] bonusEndBlock
+    - [Ext] sushiPerBlock
+    - [Ext] sushiPerSecond
+    - [Ext] BONUS_MULTIPLIER
+    - [Ext] migrator
+    - [Ext] poolInfo
+    - [Ext] userInfo
+    - [Ext] totalAllocPoint
+    - [Ext] startBlock
+    - [Ext] poolLength
+    - [Ext] add #
+    - [Ext] set #
+    - [Ext] setMigrator #
+    - [Ext] migrate #
+    - [Ext] getMultiplier
+    - [Ext] pendingSushi
+    - [Ext] massUpdatePools #
+    - [Ext] updatePool #
+    - [Ext] deposit #
+    - [Ext] withdraw #
+    - [Ext] emergencyWithdraw #
+    - [Ext] dev #
 
-## Options --
+ + [Int] IMasterChefV2
+    - [Ext] lpToken
+    - [Ext] poolInfo
 
-## Classes --
+ + [Int] IStrategy
+    - [Ext] skim #
+    - [Ext] harvest #
+    - [Ext] withdraw #
+    - [Ext] exit #
+
+ + [Int] IUniswapV2Factory
+    - [Ext] feeTo
+    - [Ext] feeToSetter
+    - [Ext] migrator
+    - [Ext] getPair
+    - [Ext] allPairs
+    - [Ext] allPairsLength
+    - [Ext] createPair #
+    - [Ext] setFeeTo #
+    - [Ext] setFeeToSetter #
+    - [Ext] setMigrator #
+
+ + [Int] IUniswapV2Pair
+    - [Ext] name
+    - [Ext] symbol
+    - [Ext] decimals
+    - [Ext] totalSupply
+    - [Ext] balanceOf
+    - [Ext] allowance
+    - [Ext] approve #
+    - [Ext] transfer #
+    - [Ext] transferFrom #
+    - [Ext] DOMAIN_SEPARATOR
+    - [Ext] PERMIT_TYPEHASH
+    - [Ext] nonces
+    - [Ext] permit #
+    - [Ext] MINIMUM_LIQUIDITY
+    - [Ext] factory
+    - [Ext] token0
+    - [Ext] token1
+    - [Ext] getReserves
+    - [Ext] price0CumulativeLast
+    - [Ext] price1CumulativeLast
+    - [Ext] kLast
+    - [Ext] mint #
+    - [Ext] burn #
+    - [Ext] swap #
+    - [Ext] skim #
+    - [Ext] sync #
+    - [Ext] initialize #
+
+ + [Int] IUniswapV2Router01
+    - [Ext] factory
+    - [Ext] WETH
+    - [Ext] addLiquidity #
+    - [Ext] addLiquidityETH ($)
+    - [Ext] removeLiquidity #
+    - [Ext] removeLiquidityETH #
+    - [Ext] removeLiquidityWithPermit #
+    - [Ext] removeLiquidityETHWithPermit #
+    - [Ext] swapExactTokensForTokens #
+    - [Ext] swapTokensForExactTokens #
+    - [Ext] swapExactETHForTokens ($)
+    - [Ext] swapTokensForExactETH #
+    - [Ext] swapExactTokensForETH #
+    - [Ext] swapETHForExactTokens ($)
+    - [Ext] quote
+    - [Ext] getAmountOut
+    - [Ext] getAmountIn
+    - [Ext] getAmountsOut
+    - [Ext] getAmountsIn
+
+ + [Int] IWethMaker
+    - [Ext] bridges
+    - [Ext] owner
+    - [Ext] withdraw #
+    - [Ext] burnPairs #
+
+ +  Multicall2
+    - [Pub] aggregate #
+    - [Pub] blockAndAggregate #
+    - [Pub] getBlockHash
+    - [Pub] getBlockNumber
+    - [Pub] getCurrentBlockCoinbase
+    - [Pub] getCurrentBlockDifficulty
+    - [Pub] getCurrentBlockGasLimit
+    - [Pub] getCurrentBlockTimestamp
+    - [Pub] getEthBalance
+    - [Pub] getLastBlockHash
+    - [Pub] tryAggregate #
+    - [Pub] tryBlockAndAggregate #
 
 
-## abstractLibrary
+ ($) = payable function
+ # = non-constant function
 
-### Inheritance --
+11:44:03 sbacha Sams-MacBook-Pro /Users/sbacha/sushi-dao master
+$ clear
+11:44:15 sbacha Sams-MacBook-Pro /Users/sbacha/sushi-dao master
+$ surya describe src/*.sol
+ + [Int] IBentoBoxV1
+    - [Ext] balanceOf
+    - [Ext] batch ($)
+    - [Ext] claimOwnership #
+    - [Ext] deploy ($)
+    - [Ext] deposit ($)
+    - [Ext] harvest #
+    - [Ext] masterContractApproved
+    - [Ext] masterContractOf
+    - [Ext] nonces
+    - [Ext] owner
+    - [Ext] pendingOwner
+    - [Ext] pendingStrategy
+    - [Ext] permitToken #
+    - [Ext] registerProtocol #
+    - [Ext] setMasterContractApproval #
+    - [Ext] setStrategy #
+    - [Ext] setStrategyTargetPercentage #
+    - [Ext] strategy
+    - [Ext] strategyData
+    - [Ext] toAmount
+    - [Ext] toShare
+    - [Ext] totals
+    - [Ext] transfer #
+    - [Ext] transferMultiple #
+    - [Ext] transferOwnership #
+    - [Ext] whitelistMasterContract #
+    - [Ext] whitelistedMasterContracts
+    - [Ext] withdraw #
 
-### usingFor --
+ + [Int] IERC20
+    - [Ext] name
+    - [Ext] symbol
+    - [Ext] decimals
+    - [Ext] totalSupply
+    - [Ext] balanceOf
+    - [Ext] allowance
+    - [Ext] approve #
+    - [Ext] permit #
 
-### Vars --
+ + [Int] IGnosisSafe
+    - [Ext] getOwners
+    - [Ext] getThreshold
 
-### Methods
+ + [Int] IOwnable
+    - [Ext] owner
+    - [Ext] renounceOwnership #
+    - [Ext] transferOwnership #
 
-	🔍str_concat() _a _b
-	🔍str_concat() _a _b _c
-	🔍str_concat() _a _b _c _d
-	🔍str_concat() _a _b _c _d _e
-	🔍str_concat() _a _b _c _d _e _f
-	🔍str_concat() _a _b _c _d _e _f _g
-	🔍str_concat() _a _b _c _d _e _f _g _h
+ + [Int] IMasterChef (IOwnable)
+    - [Ext] sushi
+    - [Ext] devaddr
+    - [Ext] bonusEndBlock
+    - [Ext] sushiPerBlock
+    - [Ext] sushiPerSecond
+    - [Ext] BONUS_MULTIPLIER
+    - [Ext] migrator
+    - [Ext] poolInfo
+    - [Ext] userInfo
+    - [Ext] totalAllocPoint
+    - [Ext] startBlock
+    - [Ext] poolLength
+    - [Ext] add #
+    - [Ext] set #
+    - [Ext] setMigrator #
+    - [Ext] migrate #
+    - [Ext] getMultiplier
+    - [Ext] pendingSushi
+    - [Ext] massUpdatePools #
+    - [Ext] updatePool #
+    - [Ext] deposit #
+    - [Ext] withdraw #
+    - [Ext] emergencyWithdraw #
+    - [Ext] dev #
 
-		string memory _a,
-        string memory _b,
-        string memory _c,
-        string memory _d,
-        string memory _e,
-        string memory _f,
-        string memory _g,
-        string memory _h
+ + [Int] IMasterChefV2
+    - [Ext] lpToken
+    - [Ext] poolInfo
 
-	🔍int_to_string()
-	🔍to_ascii_string()
-	🔍char()
+ + [Int] IStrategy
+    - [Ext] skim #
+    - [Ext] harvest #
+    - [Ext] withdraw #
+    - [Ext] exit #
 
-## Versioning
+ + [Int] IUniswapV2Factory
+    - [Ext] feeTo
+    - [Ext] feeToSetter
+    - [Ext] migrator
+    - [Ext] getPair
+    - [Ext] allPairs
+    - [Ext] allPairsLength
+    - [Ext] createPair #
+    - [Ext] setFeeTo #
+    - [Ext] setFeeToSetter #
+    - [Ext] setMigrator #
+
+ + [Int] IUniswapV2Pair
+    - [Ext] name
+    - [Ext] symbol
+    - [Ext] decimals
+    - [Ext] totalSupply
+    - [Ext] balanceOf
+    - [Ext] allowance
+    - [Ext] approve #
+    - [Ext] transfer #
+    - [Ext] transferFrom #
+    - [Ext] DOMAIN_SEPARATOR
+    - [Ext] PERMIT_TYPEHASH
+    - [Ext] nonces
+    - [Ext] permit #
+    - [Ext] MINIMUM_LIQUIDITY
+    - [Ext] factory
+    - [Ext] token0
+    - [Ext] token1
+    - [Ext] getReserves
+    - [Ext] price0CumulativeLast
+    - [Ext] price1CumulativeLast
+    - [Ext] kLast
+    - [Ext] mint #
+    - [Ext] burn #
+    - [Ext] swap #
+    - [Ext] skim #
+    - [Ext] sync #
+    - [Ext] initialize #
+
+ + [Int] IUniswapV2Router01
+    - [Ext] factory
+    - [Ext] WETH
+    - [Ext] addLiquidity #
+    - [Ext] addLiquidityETH ($)
+    - [Ext] removeLiquidity #
+    - [Ext] removeLiquidityETH #
+    - [Ext] removeLiquidityWithPermit #
+    - [Ext] removeLiquidityETHWithPermit #
+    - [Ext] swapExactTokensForTokens #
+    - [Ext] swapTokensForExactTokens #
+    - [Ext] swapExactETHForTokens ($)
+    - [Ext] swapTokensForExactETH #
+    - [Ext] swapExactTokensForETH #
+    - [Ext] swapETHForExactTokens ($)
+    - [Ext] quote
+    - [Ext] getAmountOut
+    - [Ext] getAmountIn
+    - [Ext] getAmountsOut
+    - [Ext] getAmountsIn
+
+ + [Int] IWethMaker
+    - [Ext] bridges
+    - [Ext] owner
+    - [Ext] withdraw #
+    - [Ext] burnPairs #
+
+ +  Multicall2
+    - [Pub] aggregate #
+    - [Pub] blockAndAggregate #
+    - [Pub] getBlockHash
+    - [Pub] getBlockNumber
+    - [Pub] getCurrentBlockCoinbase
+    - [Pub] getCurrentBlockDifficulty
+    - [Pub] getCurrentBlockGasLimit
+    - [Pub] getCurrentBlockTimestamp
+    - [Pub] getEthBalance
+    - [Pub] getLastBlockHash
+    - [Pub] tryAggregate #
+    - [Pub] tryBlockAndAggregate #
+
+
+ ($) = payable function
+ # = non-constant function
