@@ -13,3 +13,4 @@ VERSION export-subst
 
 # avoid merge conflicts in CHANGELOG
 /CHANGELOG.md		merge=union
+docs/* linguist-vendored
