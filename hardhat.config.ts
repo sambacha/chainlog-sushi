@@ -5,6 +5,7 @@
  * @version 1.3.0
  */
 
+import 'hardhat-abi-exporter';
 import '@primitivefi/hardhat-dodoc';
 import '@nomiclabs/hardhat-ethers';
 import '@typechain/hardhat';
@@ -39,10 +40,6 @@ solidity: {
         '*': {
           '*': [
             'abi',
-            'evm.bytecode',
-            'evm.deployedBytecode',
-            'evm.methodIdentifiers',
-            'metadata',
           ],
           '': ['ast'],
         },
@@ -74,10 +71,18 @@ solidity: {
     target: 'ethers-v5',
   },
  dodoc: {
-    runOnCompile: true,
-    debugMode: true,
+    runOnCompile: false,
+    debugMode: false,
    templatePath: "./tools/docusaurus.sqrl"
   },
+abiExporter: {
+  path: './data/abi',
+  runOnCompile: true,
+  clear: true,
+  flat: false,
+  spacing: 2,
+  pretty: false,
+}
 };
 
 /** @note Compiler output configuration for verifying on Sourceify */
