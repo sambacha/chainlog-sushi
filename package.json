@@ -1,10 +1,30 @@
 {
-  "name": "sushi-dao",
-  "version": "1.0.0",
-  "description": "<h2> zen.foundry-template </h2>",
-  "main": "index.js",
+  "name": "sushi-lens",
+  "version": "0.0.1",
+  "description": "sushi lens",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "main": "./dist/index.js",
+      "module": "./dist/index.js",
+      "import": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "require": "./dist/*.js",
+      "main": "./dist/*.js",
+      "module": "./dist/*.js",
+      "import": "./dist/*.js"
+    }
+  },
   "directories": {
-    "test": "test"
+    "test": "test",
+    "src": "src"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
