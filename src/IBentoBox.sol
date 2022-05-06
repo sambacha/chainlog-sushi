@@ -8,10 +8,26 @@ import "./BoringRebase.sol";
 
 interface IBentoBoxV1 {
     event LogDeploy(address indexed masterContract, bytes data, address indexed cloneAddress);
-    event LogDeposit(address indexed token, address indexed from, address indexed to, uint256 amount, uint256 share);
-    event LogFlashLoan(address indexed borrower, address indexed token, uint256 amount, uint256 feeAmount, address indexed receiver);
+    event LogDeposit(
+        address indexed token,
+        address indexed from,
+        address indexed to,
+        uint256 amount,
+        uint256 share
+    );
+    event LogFlashLoan(
+        address indexed borrower,
+        address indexed token,
+        uint256 amount,
+        uint256 feeAmount,
+        address indexed receiver
+    );
     event LogRegisterProtocol(address indexed protocol);
-    event LogSetMasterContractApproval(address indexed masterContract, address indexed user, bool approved);
+    event LogSetMasterContractApproval(
+        address indexed masterContract,
+        address indexed user,
+        bool approved
+    );
     event LogStrategyDivest(address indexed token, uint256 amount);
     event LogStrategyInvest(address indexed token, uint256 amount);
     event LogStrategyLoss(address indexed token, uint256 amount);
@@ -19,14 +35,28 @@ interface IBentoBoxV1 {
     event LogStrategyQueued(address indexed token, address indexed strategy);
     event LogStrategySet(address indexed token, address indexed strategy);
     event LogStrategyTargetPercentage(address indexed token, uint256 targetPercentage);
-    event LogTransfer(address indexed token, address indexed from, address indexed to, uint256 share);
+    event LogTransfer(
+        address indexed token,
+        address indexed from,
+        address indexed to,
+        uint256 share
+    );
     event LogWhiteListMasterContract(address indexed masterContract, bool approved);
-    event LogWithdraw(address indexed token, address indexed from, address indexed to, uint256 amount, uint256 share);
+    event LogWithdraw(
+        address indexed token,
+        address indexed from,
+        address indexed to,
+        uint256 amount,
+        uint256 share
+    );
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
 
     function balanceOf(IERC20, address) external view returns (uint256);
 
-    function batch(bytes[] calldata calls, bool revertOnFail) external payable returns (bool[] memory successes, bytes[] memory results);
+    function batch(bytes[] calldata calls, bool revertOnFail)
+        external
+        payable
+        returns (bool[] memory successes, bytes[] memory results);
 
     //function batchFlashLoan(IBatchFlashBorrower borrower, address[] calldata receivers, IERC20[] calldata tokens, uint256[] calldata amounts, bytes calldata data) external;
     function claimOwnership() external;
