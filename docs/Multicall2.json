@@ -1,0 +1,175 @@
+{
+    "methods": {
+        "aggregate(tuple[])": {
+            "stateMutability": "nonpayable",
+            "code": "function aggregate(Multicall2.Call[] calls) external nonpayable returns (uint256 blockNumber, bytes[] returnData)",
+            "inputs": {
+                "calls": {
+                    "type": "Multicall2.Call[]"
+                }
+            },
+            "outputs": {
+                "blockNumber": {
+                    "type": "uint256"
+                },
+                "returnData": {
+                    "type": "bytes[]"
+                }
+            }
+        },
+        "blockAndAggregate(tuple[])": {
+            "stateMutability": "nonpayable",
+            "code": "function blockAndAggregate(Multicall2.Call[] calls) external nonpayable returns (uint256 blockNumber, bytes32 blockHash, struct Multicall2.Result[] returnData)",
+            "inputs": {
+                "calls": {
+                    "type": "Multicall2.Call[]"
+                }
+            },
+            "outputs": {
+                "blockNumber": {
+                    "type": "uint256"
+                },
+                "blockHash": {
+                    "type": "bytes32"
+                },
+                "returnData": {
+                    "type": "Multicall2.Result[]"
+                }
+            }
+        },
+        "getBlockHash(uint256)": {
+            "stateMutability": "view",
+            "code": "function getBlockHash(uint256 blockNumber) external view returns (bytes32 blockHash)",
+            "inputs": {
+                "blockNumber": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "blockHash": {
+                    "type": "bytes32"
+                }
+            }
+        },
+        "getBlockNumber()": {
+            "stateMutability": "view",
+            "code": "function getBlockNumber() external view returns (uint256 blockNumber)",
+            "inputs": {},
+            "outputs": {
+                "blockNumber": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "getCurrentBlockCoinbase()": {
+            "stateMutability": "view",
+            "code": "function getCurrentBlockCoinbase() external view returns (address coinbase)",
+            "inputs": {},
+            "outputs": {
+                "coinbase": {
+                    "type": "address"
+                }
+            }
+        },
+        "getCurrentBlockDifficulty()": {
+            "stateMutability": "view",
+            "code": "function getCurrentBlockDifficulty() external view returns (uint256 difficulty)",
+            "inputs": {},
+            "outputs": {
+                "difficulty": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "getCurrentBlockGasLimit()": {
+            "stateMutability": "view",
+            "code": "function getCurrentBlockGasLimit() external view returns (uint256 gaslimit)",
+            "inputs": {},
+            "outputs": {
+                "gaslimit": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "getCurrentBlockTimestamp()": {
+            "stateMutability": "view",
+            "code": "function getCurrentBlockTimestamp() external view returns (uint256 timestamp)",
+            "inputs": {},
+            "outputs": {
+                "timestamp": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "getEthBalance(address)": {
+            "stateMutability": "view",
+            "code": "function getEthBalance(address addr) external view returns (uint256 balance)",
+            "inputs": {
+                "addr": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "balance": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "getLastBlockHash()": {
+            "stateMutability": "view",
+            "code": "function getLastBlockHash() external view returns (bytes32 blockHash)",
+            "inputs": {},
+            "outputs": {
+                "blockHash": {
+                    "type": "bytes32"
+                }
+            }
+        },
+        "tryAggregate(bool,tuple[])": {
+            "stateMutability": "nonpayable",
+            "code": "function tryAggregate(bool requireSuccess, Multicall2.Call[] calls) external nonpayable returns (struct Multicall2.Result[] returnData)",
+            "inputs": {
+                "requireSuccess": {
+                    "type": "bool"
+                },
+                "calls": {
+                    "type": "Multicall2.Call[]"
+                }
+            },
+            "outputs": {
+                "returnData": {
+                    "type": "Multicall2.Result[]"
+                }
+            }
+        },
+        "tryBlockAndAggregate(bool,tuple[])": {
+            "stateMutability": "nonpayable",
+            "code": "function tryBlockAndAggregate(bool requireSuccess, Multicall2.Call[] calls) external nonpayable returns (uint256 blockNumber, bytes32 blockHash, struct Multicall2.Result[] returnData)",
+            "inputs": {
+                "requireSuccess": {
+                    "type": "bool"
+                },
+                "calls": {
+                    "type": "Multicall2.Call[]"
+                }
+            },
+            "outputs": {
+                "blockNumber": {
+                    "type": "uint256"
+                },
+                "blockHash": {
+                    "type": "bytes32"
+                },
+                "returnData": {
+                    "type": "Multicall2.Result[]"
+                }
+            }
+        }
+    },
+    "events": {},
+    "errors": {},
+    "path": "",
+    "title": "Multicall2 - Aggregate results from multiple read-only function calls",
+    "author": "Michael Elliot <mike@makerdao.com>Joshua Levine <joshua@makerdao.com>Nick Johnson <arachnid@notdot.net>",
+    "name": "Multicall2"
+}

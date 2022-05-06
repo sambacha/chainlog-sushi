@@ -1,0 +1,475 @@
+{
+    "methods": {
+        "DOMAIN_SEPARATOR()": {
+            "stateMutability": "view",
+            "code": "function DOMAIN_SEPARATOR() external view returns (bytes32)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "bytes32"
+                }
+            }
+        },
+        "MINIMUM_LIQUIDITY()": {
+            "stateMutability": "pure",
+            "code": "function MINIMUM_LIQUIDITY() external pure returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "PERMIT_TYPEHASH()": {
+            "stateMutability": "pure",
+            "code": "function PERMIT_TYPEHASH() external pure returns (bytes32)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "bytes32"
+                }
+            }
+        },
+        "allowance(address,address)": {
+            "stateMutability": "view",
+            "code": "function allowance(address owner, address spender) external view returns (uint256)",
+            "inputs": {
+                "owner": {
+                    "type": "address"
+                },
+                "spender": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "approve(address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function approve(address spender, uint256 value) external nonpayable returns (bool)",
+            "inputs": {
+                "spender": {
+                    "type": "address"
+                },
+                "value": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "bool"
+                }
+            }
+        },
+        "balanceOf(address)": {
+            "stateMutability": "view",
+            "code": "function balanceOf(address owner) external view returns (uint256)",
+            "inputs": {
+                "owner": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "burn(address)": {
+            "stateMutability": "nonpayable",
+            "code": "function burn(address to) external nonpayable returns (uint256 amount0, uint256 amount1)",
+            "inputs": {
+                "to": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "amount0": {
+                    "type": "uint256"
+                },
+                "amount1": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "decimals()": {
+            "stateMutability": "pure",
+            "code": "function decimals() external pure returns (uint8)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint8"
+                }
+            }
+        },
+        "factory()": {
+            "stateMutability": "view",
+            "code": "function factory() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "getReserves()": {
+            "stateMutability": "view",
+            "code": "function getReserves() external view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast)",
+            "inputs": {},
+            "outputs": {
+                "reserve0": {
+                    "type": "uint112"
+                },
+                "reserve1": {
+                    "type": "uint112"
+                },
+                "blockTimestampLast": {
+                    "type": "uint32"
+                }
+            }
+        },
+        "initialize(address,address)": {
+            "stateMutability": "nonpayable",
+            "code": "function initialize(address, address) external nonpayable",
+            "inputs": {
+                "_0": {
+                    "type": "address"
+                },
+                "_1": {
+                    "type": "address"
+                }
+            },
+            "outputs": {}
+        },
+        "kLast()": {
+            "stateMutability": "view",
+            "code": "function kLast() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "mint(address)": {
+            "stateMutability": "nonpayable",
+            "code": "function mint(address to) external nonpayable returns (uint256 liquidity)",
+            "inputs": {
+                "to": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "liquidity": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "name()": {
+            "stateMutability": "pure",
+            "code": "function name() external pure returns (string)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "string"
+                }
+            }
+        },
+        "nonces(address)": {
+            "stateMutability": "view",
+            "code": "function nonces(address owner) external view returns (uint256)",
+            "inputs": {
+                "owner": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "permit(address,address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "stateMutability": "nonpayable",
+            "code": "function permit(address owner, address spender, uint256 value, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external nonpayable",
+            "inputs": {
+                "owner": {
+                    "type": "address"
+                },
+                "spender": {
+                    "type": "address"
+                },
+                "value": {
+                    "type": "uint256"
+                },
+                "deadline": {
+                    "type": "uint256"
+                },
+                "v": {
+                    "type": "uint8"
+                },
+                "r": {
+                    "type": "bytes32"
+                },
+                "s": {
+                    "type": "bytes32"
+                }
+            },
+            "outputs": {}
+        },
+        "price0CumulativeLast()": {
+            "stateMutability": "view",
+            "code": "function price0CumulativeLast() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "price1CumulativeLast()": {
+            "stateMutability": "view",
+            "code": "function price1CumulativeLast() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "skim(address)": {
+            "stateMutability": "nonpayable",
+            "code": "function skim(address to) external nonpayable",
+            "inputs": {
+                "to": {
+                    "type": "address"
+                }
+            },
+            "outputs": {}
+        },
+        "swap(uint256,uint256,address,bytes)": {
+            "stateMutability": "nonpayable",
+            "code": "function swap(uint256 amount0Out, uint256 amount1Out, address to, bytes data) external nonpayable",
+            "inputs": {
+                "amount0Out": {
+                    "type": "uint256"
+                },
+                "amount1Out": {
+                    "type": "uint256"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "data": {
+                    "type": "bytes"
+                }
+            },
+            "outputs": {}
+        },
+        "symbol()": {
+            "stateMutability": "pure",
+            "code": "function symbol() external pure returns (string)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "string"
+                }
+            }
+        },
+        "sync()": {
+            "stateMutability": "nonpayable",
+            "code": "function sync() external nonpayable",
+            "inputs": {},
+            "outputs": {}
+        },
+        "token0()": {
+            "stateMutability": "view",
+            "code": "function token0() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "token1()": {
+            "stateMutability": "view",
+            "code": "function token1() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "totalSupply()": {
+            "stateMutability": "view",
+            "code": "function totalSupply() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "transfer(address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function transfer(address to, uint256 value) external nonpayable returns (bool)",
+            "inputs": {
+                "to": {
+                    "type": "address"
+                },
+                "value": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "bool"
+                }
+            }
+        },
+        "transferFrom(address,address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function transferFrom(address from, address to, uint256 value) external nonpayable returns (bool)",
+            "inputs": {
+                "from": {
+                    "type": "address"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "value": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "bool"
+                }
+            }
+        }
+    },
+    "events": {
+        "Approval": {
+            "code": "event Approval(address indexed owner, address indexed spender, uint256 value)",
+            "inputs": {
+                "owner": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "spender": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "value": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "Burn": {
+            "code": "event Burn(address indexed sender, uint256 amount0, uint256 amount1, address indexed to)",
+            "inputs": {
+                "sender": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount0": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "amount1": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "to": {
+                    "type": "address",
+                    "indexed": true
+                }
+            }
+        },
+        "Mint": {
+            "code": "event Mint(address indexed sender, uint256 amount0, uint256 amount1)",
+            "inputs": {
+                "sender": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount0": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "amount1": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "Swap": {
+            "code": "event Swap(address indexed sender, uint256 amount0In, uint256 amount1In, uint256 amount0Out, uint256 amount1Out, address indexed to)",
+            "inputs": {
+                "sender": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount0In": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "amount1In": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "amount0Out": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "amount1Out": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "to": {
+                    "type": "address",
+                    "indexed": true
+                }
+            }
+        },
+        "Sync": {
+            "code": "event Sync(uint112 reserve0, uint112 reserve1)",
+            "inputs": {
+                "reserve0": {
+                    "type": "uint112",
+                    "indexed": false
+                },
+                "reserve1": {
+                    "type": "uint112",
+                    "indexed": false
+                }
+            }
+        },
+        "Transfer": {
+            "code": "event Transfer(address indexed from, address indexed to, uint256 value)",
+            "inputs": {
+                "from": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "to": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "value": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        }
+    },
+    "errors": {},
+    "path": "",
+    "name": "IUniswapV2Pair"
+}

@@ -1,0 +1,63 @@
+{
+    "methods": {
+        "exit(uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function exit(uint256 balance) external nonpayable returns (int256 amountAdded)",
+            "inputs": {
+                "balance": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountAdded": {
+                    "type": "int256"
+                }
+            }
+        },
+        "harvest(uint256,address)": {
+            "stateMutability": "nonpayable",
+            "code": "function harvest(uint256 balance, address sender) external nonpayable returns (int256 amountAdded)",
+            "inputs": {
+                "balance": {
+                    "type": "uint256"
+                },
+                "sender": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "amountAdded": {
+                    "type": "int256"
+                }
+            }
+        },
+        "skim(uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function skim(uint256 amount) external nonpayable",
+            "inputs": {
+                "amount": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {}
+        },
+        "withdraw(uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function withdraw(uint256 amount) external nonpayable returns (uint256 actualAmount)",
+            "inputs": {
+                "amount": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "actualAmount": {
+                    "type": "uint256"
+                }
+            }
+        }
+    },
+    "events": {},
+    "errors": {},
+    "path": "",
+    "name": "IStrategy"
+}

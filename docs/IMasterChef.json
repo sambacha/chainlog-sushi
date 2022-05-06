@@ -1,0 +1,378 @@
+{
+    "methods": {
+        "BONUS_MULTIPLIER()": {
+            "stateMutability": "view",
+            "code": "function BONUS_MULTIPLIER() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "add(uint256,address,bool)": {
+            "stateMutability": "nonpayable",
+            "code": "function add(uint256 _allocPoint, contract IERC20 _lpToken, bool _withUpdate) external nonpayable",
+            "inputs": {
+                "_allocPoint": {
+                    "type": "uint256"
+                },
+                "_lpToken": {
+                    "type": "contract IERC20"
+                },
+                "_withUpdate": {
+                    "type": "bool"
+                }
+            },
+            "outputs": {}
+        },
+        "bonusEndBlock()": {
+            "stateMutability": "view",
+            "code": "function bonusEndBlock() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "deposit(uint256,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function deposit(uint256 _pid, uint256 _amount) external nonpayable",
+            "inputs": {
+                "_pid": {
+                    "type": "uint256"
+                },
+                "_amount": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {}
+        },
+        "dev(address)": {
+            "stateMutability": "nonpayable",
+            "code": "function dev(address _devaddr) external nonpayable",
+            "inputs": {
+                "_devaddr": {
+                    "type": "address"
+                }
+            },
+            "outputs": {}
+        },
+        "devaddr()": {
+            "stateMutability": "view",
+            "code": "function devaddr() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "emergencyWithdraw(uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function emergencyWithdraw(uint256 _pid) external nonpayable",
+            "inputs": {
+                "_pid": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {}
+        },
+        "getMultiplier(uint256,uint256)": {
+            "stateMutability": "view",
+            "code": "function getMultiplier(uint256 _from, uint256 _to) external view returns (uint256)",
+            "inputs": {
+                "_from": {
+                    "type": "uint256"
+                },
+                "_to": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "massUpdatePools()": {
+            "stateMutability": "nonpayable",
+            "code": "function massUpdatePools() external nonpayable",
+            "inputs": {},
+            "outputs": {}
+        },
+        "migrate(uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function migrate(uint256 _pid) external nonpayable",
+            "inputs": {
+                "_pid": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {}
+        },
+        "migrator()": {
+            "stateMutability": "view",
+            "code": "function migrator() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "owner()": {
+            "stateMutability": "view",
+            "code": "function owner() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "pendingSushi(uint256,address)": {
+            "stateMutability": "view",
+            "code": "function pendingSushi(uint256 _pid, address _user) external view returns (uint256)",
+            "inputs": {
+                "_pid": {
+                    "type": "uint256"
+                },
+                "_user": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "poolInfo(uint256)": {
+            "stateMutability": "view",
+            "code": "function poolInfo(uint256 poolId) external view returns (struct IMasterChef.PoolInfo)",
+            "inputs": {
+                "poolId": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "IMasterChef.PoolInfo"
+                }
+            }
+        },
+        "poolLength()": {
+            "stateMutability": "view",
+            "code": "function poolLength() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "renounceOwnership()": {
+            "stateMutability": "nonpayable",
+            "code": "function renounceOwnership() external nonpayable",
+            "inputs": {},
+            "outputs": {}
+        },
+        "set(uint256,uint256,bool)": {
+            "stateMutability": "nonpayable",
+            "code": "function set(uint256 _pid, uint256 _allocPoint, bool _withUpdate) external nonpayable",
+            "inputs": {
+                "_pid": {
+                    "type": "uint256"
+                },
+                "_allocPoint": {
+                    "type": "uint256"
+                },
+                "_withUpdate": {
+                    "type": "bool"
+                }
+            },
+            "outputs": {}
+        },
+        "setMigrator(address)": {
+            "stateMutability": "nonpayable",
+            "code": "function setMigrator(address _migrator) external nonpayable",
+            "inputs": {
+                "_migrator": {
+                    "type": "address"
+                }
+            },
+            "outputs": {}
+        },
+        "startBlock()": {
+            "stateMutability": "view",
+            "code": "function startBlock() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "sushi()": {
+            "stateMutability": "view",
+            "code": "function sushi() external view returns (contract IERC20)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "contract IERC20"
+                }
+            }
+        },
+        "sushiPerBlock()": {
+            "stateMutability": "view",
+            "code": "function sushiPerBlock() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "sushiPerSecond()": {
+            "stateMutability": "view",
+            "code": "function sushiPerSecond() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "totalAllocPoint()": {
+            "stateMutability": "view",
+            "code": "function totalAllocPoint() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "transferOwnership(address)": {
+            "stateMutability": "nonpayable",
+            "code": "function transferOwnership(address newOwner) external nonpayable",
+            "inputs": {
+                "newOwner": {
+                    "type": "address"
+                }
+            },
+            "outputs": {}
+        },
+        "updatePool(uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function updatePool(uint256 _pid) external nonpayable",
+            "inputs": {
+                "_pid": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {}
+        },
+        "userInfo(uint256,address)": {
+            "stateMutability": "view",
+            "code": "function userInfo(uint256 poolId, address user) external view returns (struct IMasterChef.UserInfo)",
+            "inputs": {
+                "poolId": {
+                    "type": "uint256"
+                },
+                "user": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "IMasterChef.UserInfo"
+                }
+            }
+        },
+        "withdraw(uint256,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function withdraw(uint256 _pid, uint256 _amount) external nonpayable",
+            "inputs": {
+                "_pid": {
+                    "type": "uint256"
+                },
+                "_amount": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {}
+        }
+    },
+    "events": {
+        "Deposit": {
+            "code": "event Deposit(address indexed user, uint256 indexed pid, uint256 amount)",
+            "inputs": {
+                "user": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "pid": {
+                    "type": "uint256",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "EmergencyWithdraw": {
+            "code": "event EmergencyWithdraw(address indexed user, uint256 indexed pid, uint256 amount)",
+            "inputs": {
+                "user": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "pid": {
+                    "type": "uint256",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "OwnershipTransferred": {
+            "code": "event OwnershipTransferred(address indexed previousOwner, address indexed newOwner)",
+            "inputs": {
+                "previousOwner": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "newOwner": {
+                    "type": "address",
+                    "indexed": true
+                }
+            }
+        },
+        "Withdraw": {
+            "code": "event Withdraw(address indexed user, uint256 indexed pid, uint256 amount)",
+            "inputs": {
+                "user": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "pid": {
+                    "type": "uint256",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        }
+    },
+    "errors": {},
+    "path": "",
+    "name": "IMasterChef"
+}

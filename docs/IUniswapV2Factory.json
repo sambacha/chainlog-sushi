@@ -1,0 +1,148 @@
+{
+    "methods": {
+        "allPairs(uint256)": {
+            "stateMutability": "view",
+            "code": "function allPairs(uint256) external view returns (address pair)",
+            "inputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "pair": {
+                    "type": "address"
+                }
+            }
+        },
+        "allPairsLength()": {
+            "stateMutability": "view",
+            "code": "function allPairsLength() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "createPair(address,address)": {
+            "stateMutability": "nonpayable",
+            "code": "function createPair(address tokenA, address tokenB) external nonpayable returns (address pair)",
+            "inputs": {
+                "tokenA": {
+                    "type": "address"
+                },
+                "tokenB": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "pair": {
+                    "type": "address"
+                }
+            }
+        },
+        "feeTo()": {
+            "stateMutability": "view",
+            "code": "function feeTo() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "feeToSetter()": {
+            "stateMutability": "view",
+            "code": "function feeToSetter() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "getPair(address,address)": {
+            "stateMutability": "view",
+            "code": "function getPair(address tokenA, address tokenB) external view returns (address pair)",
+            "inputs": {
+                "tokenA": {
+                    "type": "address"
+                },
+                "tokenB": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "pair": {
+                    "type": "address"
+                }
+            }
+        },
+        "migrator()": {
+            "stateMutability": "view",
+            "code": "function migrator() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "setFeeTo(address)": {
+            "stateMutability": "nonpayable",
+            "code": "function setFeeTo(address) external nonpayable",
+            "inputs": {
+                "_0": {
+                    "type": "address"
+                }
+            },
+            "outputs": {}
+        },
+        "setFeeToSetter(address)": {
+            "stateMutability": "nonpayable",
+            "code": "function setFeeToSetter(address) external nonpayable",
+            "inputs": {
+                "_0": {
+                    "type": "address"
+                }
+            },
+            "outputs": {}
+        },
+        "setMigrator(address)": {
+            "stateMutability": "nonpayable",
+            "code": "function setMigrator(address) external nonpayable",
+            "inputs": {
+                "_0": {
+                    "type": "address"
+                }
+            },
+            "outputs": {}
+        }
+    },
+    "events": {
+        "PairCreated": {
+            "code": "event PairCreated(address indexed token0, address indexed token1, address pair, uint256)",
+            "inputs": {
+                "token0": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "token1": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "pair": {
+                    "type": "address",
+                    "indexed": false
+                },
+                "_3": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        }
+    },
+    "errors": {},
+    "path": "",
+    "name": "IUniswapV2Factory"
+}

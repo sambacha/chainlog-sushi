@@ -1,0 +1,81 @@
+{
+    "methods": {
+        "bridges(address)": {
+            "stateMutability": "view",
+            "code": "function bridges(address) external view returns (address)",
+            "inputs": {
+                "_0": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "burnPairs(address[],uint256[],uint256[],uint256[])": {
+            "stateMutability": "nonpayable",
+            "code": "function burnPairs(address[] lpTokens, uint256[] amounts, uint256[] minimumOut0, uint256[] minimumOut1) external nonpayable",
+            "inputs": {
+                "lpTokens": {
+                    "type": "address[]"
+                },
+                "amounts": {
+                    "type": "uint256[]"
+                },
+                "minimumOut0": {
+                    "type": "uint256[]"
+                },
+                "minimumOut1": {
+                    "type": "uint256[]"
+                }
+            },
+            "outputs": {}
+        },
+        "owner()": {
+            "stateMutability": "view",
+            "code": "function owner() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "withdraw(address,address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function withdraw(address token, address to, uint256 _value) external nonpayable",
+            "inputs": {
+                "token": {
+                    "type": "address"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "_value": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {}
+        }
+    },
+    "events": {
+        "SetTrusted": {
+            "code": "event SetTrusted(address indexed user, bool isTrusted)",
+            "inputs": {
+                "user": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "isTrusted": {
+                    "type": "bool",
+                    "indexed": false
+                }
+            }
+        }
+    },
+    "errors": {},
+    "path": "",
+    "name": "IWethMaker"
+}

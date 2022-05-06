@@ -1,0 +1,36 @@
+{
+    "methods": {
+        "lpToken(uint256)": {
+            "stateMutability": "view",
+            "code": "function lpToken(uint256 poolId) external view returns (address)",
+            "inputs": {
+                "poolId": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "poolInfo(uint256)": {
+            "stateMutability": "view",
+            "code": "function poolInfo(uint256 poolId) external view returns (struct IMasterChefV2.PoolInfo)",
+            "inputs": {
+                "poolId": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "IMasterChefV2.PoolInfo"
+                }
+            }
+        }
+    },
+    "events": {},
+    "errors": {},
+    "path": "",
+    "name": "IMasterChefV2"
+}

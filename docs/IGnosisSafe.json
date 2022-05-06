@@ -1,0 +1,28 @@
+{
+    "methods": {
+        "getOwners()": {
+            "stateMutability": "view",
+            "code": "function getOwners() external view returns (address[])",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address[]"
+                }
+            }
+        },
+        "getThreshold()": {
+            "stateMutability": "view",
+            "code": "function getThreshold() external view returns (uint256)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        }
+    },
+    "events": {},
+    "errors": {},
+    "path": "",
+    "name": "IGnosisSafe"
+}

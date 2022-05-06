@@ -1,0 +1,734 @@
+{
+    "methods": {
+        "balanceOf(address,address)": {
+            "stateMutability": "view",
+            "code": "function balanceOf(contract IERC20, address) external view returns (uint256)",
+            "inputs": {
+                "_0": {
+                    "type": "contract IERC20"
+                },
+                "_1": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "batch(bytes[],bool)": {
+            "stateMutability": "payable",
+            "code": "function batch(bytes[] calls, bool revertOnFail) external payable returns (bool[] successes, bytes[] results)",
+            "inputs": {
+                "calls": {
+                    "type": "bytes[]"
+                },
+                "revertOnFail": {
+                    "type": "bool"
+                }
+            },
+            "outputs": {
+                "successes": {
+                    "type": "bool[]"
+                },
+                "results": {
+                    "type": "bytes[]"
+                }
+            }
+        },
+        "claimOwnership()": {
+            "stateMutability": "nonpayable",
+            "code": "function claimOwnership() external nonpayable",
+            "inputs": {},
+            "outputs": {}
+        },
+        "deploy(address,bytes,bool)": {
+            "stateMutability": "payable",
+            "code": "function deploy(address masterContract, bytes data, bool useCreate2) external payable",
+            "inputs": {
+                "masterContract": {
+                    "type": "address"
+                },
+                "data": {
+                    "type": "bytes"
+                },
+                "useCreate2": {
+                    "type": "bool"
+                }
+            },
+            "outputs": {}
+        },
+        "deposit(address,address,address,uint256,uint256)": {
+            "stateMutability": "payable",
+            "code": "function deposit(contract IERC20 token_, address from, address to, uint256 amount, uint256 share) external payable returns (uint256 amountOut, uint256 shareOut)",
+            "inputs": {
+                "token_": {
+                    "type": "contract IERC20"
+                },
+                "from": {
+                    "type": "address"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "amount": {
+                    "type": "uint256"
+                },
+                "share": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountOut": {
+                    "type": "uint256"
+                },
+                "shareOut": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "harvest(address,bool,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function harvest(contract IERC20 token, bool balance, uint256 maxChangeAmount) external nonpayable",
+            "inputs": {
+                "token": {
+                    "type": "contract IERC20"
+                },
+                "balance": {
+                    "type": "bool"
+                },
+                "maxChangeAmount": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {}
+        },
+        "masterContractApproved(address,address)": {
+            "stateMutability": "view",
+            "code": "function masterContractApproved(address, address) external view returns (bool)",
+            "inputs": {
+                "_0": {
+                    "type": "address"
+                },
+                "_1": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "bool"
+                }
+            }
+        },
+        "masterContractOf(address)": {
+            "stateMutability": "view",
+            "code": "function masterContractOf(address) external view returns (address)",
+            "inputs": {
+                "_0": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "nonces(address)": {
+            "stateMutability": "view",
+            "code": "function nonces(address) external view returns (uint256)",
+            "inputs": {
+                "_0": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "owner()": {
+            "stateMutability": "view",
+            "code": "function owner() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "pendingOwner()": {
+            "stateMutability": "view",
+            "code": "function pendingOwner() external view returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "pendingStrategy(address)": {
+            "stateMutability": "view",
+            "code": "function pendingStrategy(contract IERC20) external view returns (contract IStrategy)",
+            "inputs": {
+                "_0": {
+                    "type": "contract IERC20"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "contract IStrategy"
+                }
+            }
+        },
+        "permitToken(address,address,address,uint256,uint256,uint8,bytes32,bytes32)": {
+            "stateMutability": "nonpayable",
+            "code": "function permitToken(contract IERC20 token, address from, address to, uint256 amount, uint256 deadline, uint8 v, bytes32 r, bytes32 s) external nonpayable",
+            "inputs": {
+                "token": {
+                    "type": "contract IERC20"
+                },
+                "from": {
+                    "type": "address"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "amount": {
+                    "type": "uint256"
+                },
+                "deadline": {
+                    "type": "uint256"
+                },
+                "v": {
+                    "type": "uint8"
+                },
+                "r": {
+                    "type": "bytes32"
+                },
+                "s": {
+                    "type": "bytes32"
+                }
+            },
+            "outputs": {}
+        },
+        "registerProtocol()": {
+            "stateMutability": "nonpayable",
+            "code": "function registerProtocol() external nonpayable",
+            "inputs": {},
+            "outputs": {}
+        },
+        "setMasterContractApproval(address,address,bool,uint8,bytes32,bytes32)": {
+            "stateMutability": "nonpayable",
+            "code": "function setMasterContractApproval(address user, address masterContract, bool approved, uint8 v, bytes32 r, bytes32 s) external nonpayable",
+            "inputs": {
+                "user": {
+                    "type": "address"
+                },
+                "masterContract": {
+                    "type": "address"
+                },
+                "approved": {
+                    "type": "bool"
+                },
+                "v": {
+                    "type": "uint8"
+                },
+                "r": {
+                    "type": "bytes32"
+                },
+                "s": {
+                    "type": "bytes32"
+                }
+            },
+            "outputs": {}
+        },
+        "setStrategy(address,address)": {
+            "stateMutability": "nonpayable",
+            "code": "function setStrategy(contract IERC20 token, contract IStrategy newStrategy) external nonpayable",
+            "inputs": {
+                "token": {
+                    "type": "contract IERC20"
+                },
+                "newStrategy": {
+                    "type": "contract IStrategy"
+                }
+            },
+            "outputs": {}
+        },
+        "setStrategyTargetPercentage(address,uint64)": {
+            "stateMutability": "nonpayable",
+            "code": "function setStrategyTargetPercentage(contract IERC20 token, uint64 targetPercentage_) external nonpayable",
+            "inputs": {
+                "token": {
+                    "type": "contract IERC20"
+                },
+                "targetPercentage_": {
+                    "type": "uint64"
+                }
+            },
+            "outputs": {}
+        },
+        "strategy(address)": {
+            "stateMutability": "view",
+            "code": "function strategy(contract IERC20) external view returns (contract IStrategy)",
+            "inputs": {
+                "_0": {
+                    "type": "contract IERC20"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "contract IStrategy"
+                }
+            }
+        },
+        "strategyData(address)": {
+            "stateMutability": "view",
+            "code": "function strategyData(contract IERC20) external view returns (uint64 strategyStartDate, uint64 targetPercentage, uint128 balance)",
+            "inputs": {
+                "_0": {
+                    "type": "contract IERC20"
+                }
+            },
+            "outputs": {
+                "strategyStartDate": {
+                    "type": "uint64"
+                },
+                "targetPercentage": {
+                    "type": "uint64"
+                },
+                "balance": {
+                    "type": "uint128"
+                }
+            }
+        },
+        "toAmount(address,uint256,bool)": {
+            "stateMutability": "view",
+            "code": "function toAmount(contract IERC20 token, uint256 share, bool roundUp) external view returns (uint256 amount)",
+            "inputs": {
+                "token": {
+                    "type": "contract IERC20"
+                },
+                "share": {
+                    "type": "uint256"
+                },
+                "roundUp": {
+                    "type": "bool"
+                }
+            },
+            "outputs": {
+                "amount": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "toShare(address,uint256,bool)": {
+            "stateMutability": "view",
+            "code": "function toShare(contract IERC20 token, uint256 amount, bool roundUp) external view returns (uint256 share)",
+            "inputs": {
+                "token": {
+                    "type": "contract IERC20"
+                },
+                "amount": {
+                    "type": "uint256"
+                },
+                "roundUp": {
+                    "type": "bool"
+                }
+            },
+            "outputs": {
+                "share": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "totals(address)": {
+            "stateMutability": "view",
+            "code": "function totals(contract IERC20) external view returns (struct Rebase totals_)",
+            "inputs": {
+                "_0": {
+                    "type": "contract IERC20"
+                }
+            },
+            "outputs": {
+                "totals_": {
+                    "type": "Rebase"
+                }
+            }
+        },
+        "transfer(address,address,address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function transfer(contract IERC20 token, address from, address to, uint256 share) external nonpayable",
+            "inputs": {
+                "token": {
+                    "type": "contract IERC20"
+                },
+                "from": {
+                    "type": "address"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "share": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {}
+        },
+        "transferMultiple(address,address,address[],uint256[])": {
+            "stateMutability": "nonpayable",
+            "code": "function transferMultiple(contract IERC20 token, address from, address[] tos, uint256[] shares) external nonpayable",
+            "inputs": {
+                "token": {
+                    "type": "contract IERC20"
+                },
+                "from": {
+                    "type": "address"
+                },
+                "tos": {
+                    "type": "address[]"
+                },
+                "shares": {
+                    "type": "uint256[]"
+                }
+            },
+            "outputs": {}
+        },
+        "transferOwnership(address,bool,bool)": {
+            "stateMutability": "nonpayable",
+            "code": "function transferOwnership(address newOwner, bool direct, bool renounce) external nonpayable",
+            "inputs": {
+                "newOwner": {
+                    "type": "address"
+                },
+                "direct": {
+                    "type": "bool"
+                },
+                "renounce": {
+                    "type": "bool"
+                }
+            },
+            "outputs": {}
+        },
+        "whitelistMasterContract(address,bool)": {
+            "stateMutability": "nonpayable",
+            "code": "function whitelistMasterContract(address masterContract, bool approved) external nonpayable",
+            "inputs": {
+                "masterContract": {
+                    "type": "address"
+                },
+                "approved": {
+                    "type": "bool"
+                }
+            },
+            "outputs": {}
+        },
+        "whitelistedMasterContracts(address)": {
+            "stateMutability": "view",
+            "code": "function whitelistedMasterContracts(address) external view returns (bool)",
+            "inputs": {
+                "_0": {
+                    "type": "address"
+                }
+            },
+            "outputs": {
+                "_0": {
+                    "type": "bool"
+                }
+            }
+        },
+        "withdraw(address,address,address,uint256,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function withdraw(contract IERC20 token_, address from, address to, uint256 amount, uint256 share) external nonpayable returns (uint256 amountOut, uint256 shareOut)",
+            "inputs": {
+                "token_": {
+                    "type": "contract IERC20"
+                },
+                "from": {
+                    "type": "address"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "amount": {
+                    "type": "uint256"
+                },
+                "share": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountOut": {
+                    "type": "uint256"
+                },
+                "shareOut": {
+                    "type": "uint256"
+                }
+            }
+        }
+    },
+    "events": {
+        "LogDeploy": {
+            "code": "event LogDeploy(address indexed masterContract, bytes data, address indexed cloneAddress)",
+            "inputs": {
+                "masterContract": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "data": {
+                    "type": "bytes",
+                    "indexed": false
+                },
+                "cloneAddress": {
+                    "type": "address",
+                    "indexed": true
+                }
+            }
+        },
+        "LogDeposit": {
+            "code": "event LogDeposit(address indexed token, address indexed from, address indexed to, uint256 amount, uint256 share)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "from": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "to": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "share": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "LogFlashLoan": {
+            "code": "event LogFlashLoan(address indexed borrower, address indexed token, uint256 amount, uint256 feeAmount, address indexed receiver)",
+            "inputs": {
+                "borrower": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "feeAmount": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "receiver": {
+                    "type": "address",
+                    "indexed": true
+                }
+            }
+        },
+        "LogRegisterProtocol": {
+            "code": "event LogRegisterProtocol(address indexed protocol)",
+            "inputs": {
+                "protocol": {
+                    "type": "address",
+                    "indexed": true
+                }
+            }
+        },
+        "LogSetMasterContractApproval": {
+            "code": "event LogSetMasterContractApproval(address indexed masterContract, address indexed user, bool approved)",
+            "inputs": {
+                "masterContract": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "user": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "approved": {
+                    "type": "bool",
+                    "indexed": false
+                }
+            }
+        },
+        "LogStrategyDivest": {
+            "code": "event LogStrategyDivest(address indexed token, uint256 amount)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "LogStrategyInvest": {
+            "code": "event LogStrategyInvest(address indexed token, uint256 amount)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "LogStrategyLoss": {
+            "code": "event LogStrategyLoss(address indexed token, uint256 amount)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "LogStrategyProfit": {
+            "code": "event LogStrategyProfit(address indexed token, uint256 amount)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "LogStrategyQueued": {
+            "code": "event LogStrategyQueued(address indexed token, address indexed strategy)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "strategy": {
+                    "type": "address",
+                    "indexed": true
+                }
+            }
+        },
+        "LogStrategySet": {
+            "code": "event LogStrategySet(address indexed token, address indexed strategy)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "strategy": {
+                    "type": "address",
+                    "indexed": true
+                }
+            }
+        },
+        "LogStrategyTargetPercentage": {
+            "code": "event LogStrategyTargetPercentage(address indexed token, uint256 targetPercentage)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "targetPercentage": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "LogTransfer": {
+            "code": "event LogTransfer(address indexed token, address indexed from, address indexed to, uint256 share)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "from": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "to": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "share": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "LogWhiteListMasterContract": {
+            "code": "event LogWhiteListMasterContract(address indexed masterContract, bool approved)",
+            "inputs": {
+                "masterContract": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "approved": {
+                    "type": "bool",
+                    "indexed": false
+                }
+            }
+        },
+        "LogWithdraw": {
+            "code": "event LogWithdraw(address indexed token, address indexed from, address indexed to, uint256 amount, uint256 share)",
+            "inputs": {
+                "token": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "from": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "to": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "amount": {
+                    "type": "uint256",
+                    "indexed": false
+                },
+                "share": {
+                    "type": "uint256",
+                    "indexed": false
+                }
+            }
+        },
+        "OwnershipTransferred": {
+            "code": "event OwnershipTransferred(address indexed previousOwner, address indexed newOwner)",
+            "inputs": {
+                "previousOwner": {
+                    "type": "address",
+                    "indexed": true
+                },
+                "newOwner": {
+                    "type": "address",
+                    "indexed": true
+                }
+            }
+        }
+    },
+    "errors": {},
+    "path": "",
+    "name": "IBentoBoxV1"
+}

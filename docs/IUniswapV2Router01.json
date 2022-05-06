@@ -1,0 +1,506 @@
+{
+    "methods": {
+        "WETH()": {
+            "stateMutability": "pure",
+            "code": "function WETH() external pure returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "addLiquidity(address,address,uint256,uint256,uint256,uint256,address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function addLiquidity(address tokenA, address tokenB, uint256 amountADesired, uint256 amountBDesired, uint256 amountAMin, uint256 amountBMin, address to, uint256 deadline) external nonpayable returns (uint256 amountA, uint256 amountB, uint256 liquidity)",
+            "inputs": {
+                "tokenA": {
+                    "type": "address"
+                },
+                "tokenB": {
+                    "type": "address"
+                },
+                "amountADesired": {
+                    "type": "uint256"
+                },
+                "amountBDesired": {
+                    "type": "uint256"
+                },
+                "amountAMin": {
+                    "type": "uint256"
+                },
+                "amountBMin": {
+                    "type": "uint256"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountA": {
+                    "type": "uint256"
+                },
+                "amountB": {
+                    "type": "uint256"
+                },
+                "liquidity": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "addLiquidityETH(address,uint256,uint256,uint256,address,uint256)": {
+            "stateMutability": "payable",
+            "code": "function addLiquidityETH(address token, uint256 amountTokenDesired, uint256 amountTokenMin, uint256 amountETHMin, address to, uint256 deadline) external payable returns (uint256 amountToken, uint256 amountETH, uint256 liquidity)",
+            "inputs": {
+                "token": {
+                    "type": "address"
+                },
+                "amountTokenDesired": {
+                    "type": "uint256"
+                },
+                "amountTokenMin": {
+                    "type": "uint256"
+                },
+                "amountETHMin": {
+                    "type": "uint256"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountToken": {
+                    "type": "uint256"
+                },
+                "amountETH": {
+                    "type": "uint256"
+                },
+                "liquidity": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "factory()": {
+            "stateMutability": "pure",
+            "code": "function factory() external pure returns (address)",
+            "inputs": {},
+            "outputs": {
+                "_0": {
+                    "type": "address"
+                }
+            }
+        },
+        "getAmountIn(uint256,uint256,uint256)": {
+            "stateMutability": "pure",
+            "code": "function getAmountIn(uint256 amountOut, uint256 reserveIn, uint256 reserveOut) external pure returns (uint256 amountIn)",
+            "inputs": {
+                "amountOut": {
+                    "type": "uint256"
+                },
+                "reserveIn": {
+                    "type": "uint256"
+                },
+                "reserveOut": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountIn": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "getAmountOut(uint256,uint256,uint256)": {
+            "stateMutability": "pure",
+            "code": "function getAmountOut(uint256 amountIn, uint256 reserveIn, uint256 reserveOut) external pure returns (uint256 amountOut)",
+            "inputs": {
+                "amountIn": {
+                    "type": "uint256"
+                },
+                "reserveIn": {
+                    "type": "uint256"
+                },
+                "reserveOut": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountOut": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "getAmountsIn(uint256,address[])": {
+            "stateMutability": "view",
+            "code": "function getAmountsIn(uint256 amountOut, address[] path) external view returns (uint256[] amounts)",
+            "inputs": {
+                "amountOut": {
+                    "type": "uint256"
+                },
+                "path": {
+                    "type": "address[]"
+                }
+            },
+            "outputs": {
+                "amounts": {
+                    "type": "uint256[]"
+                }
+            }
+        },
+        "getAmountsOut(uint256,address[])": {
+            "stateMutability": "view",
+            "code": "function getAmountsOut(uint256 amountIn, address[] path) external view returns (uint256[] amounts)",
+            "inputs": {
+                "amountIn": {
+                    "type": "uint256"
+                },
+                "path": {
+                    "type": "address[]"
+                }
+            },
+            "outputs": {
+                "amounts": {
+                    "type": "uint256[]"
+                }
+            }
+        },
+        "quote(uint256,uint256,uint256)": {
+            "stateMutability": "pure",
+            "code": "function quote(uint256 amountA, uint256 reserveA, uint256 reserveB) external pure returns (uint256 amountB)",
+            "inputs": {
+                "amountA": {
+                    "type": "uint256"
+                },
+                "reserveA": {
+                    "type": "uint256"
+                },
+                "reserveB": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountB": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "removeLiquidity(address,address,uint256,uint256,uint256,address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function removeLiquidity(address tokenA, address tokenB, uint256 liquidity, uint256 amountAMin, uint256 amountBMin, address to, uint256 deadline) external nonpayable returns (uint256 amountA, uint256 amountB)",
+            "inputs": {
+                "tokenA": {
+                    "type": "address"
+                },
+                "tokenB": {
+                    "type": "address"
+                },
+                "liquidity": {
+                    "type": "uint256"
+                },
+                "amountAMin": {
+                    "type": "uint256"
+                },
+                "amountBMin": {
+                    "type": "uint256"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountA": {
+                    "type": "uint256"
+                },
+                "amountB": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "removeLiquidityETH(address,uint256,uint256,uint256,address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function removeLiquidityETH(address token, uint256 liquidity, uint256 amountTokenMin, uint256 amountETHMin, address to, uint256 deadline) external nonpayable returns (uint256 amountToken, uint256 amountETH)",
+            "inputs": {
+                "token": {
+                    "type": "address"
+                },
+                "liquidity": {
+                    "type": "uint256"
+                },
+                "amountTokenMin": {
+                    "type": "uint256"
+                },
+                "amountETHMin": {
+                    "type": "uint256"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amountToken": {
+                    "type": "uint256"
+                },
+                "amountETH": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "removeLiquidityETHWithPermit(address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)": {
+            "stateMutability": "nonpayable",
+            "code": "function removeLiquidityETHWithPermit(address token, uint256 liquidity, uint256 amountTokenMin, uint256 amountETHMin, address to, uint256 deadline, bool approveMax, uint8 v, bytes32 r, bytes32 s) external nonpayable returns (uint256 amountToken, uint256 amountETH)",
+            "inputs": {
+                "token": {
+                    "type": "address"
+                },
+                "liquidity": {
+                    "type": "uint256"
+                },
+                "amountTokenMin": {
+                    "type": "uint256"
+                },
+                "amountETHMin": {
+                    "type": "uint256"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                },
+                "approveMax": {
+                    "type": "bool"
+                },
+                "v": {
+                    "type": "uint8"
+                },
+                "r": {
+                    "type": "bytes32"
+                },
+                "s": {
+                    "type": "bytes32"
+                }
+            },
+            "outputs": {
+                "amountToken": {
+                    "type": "uint256"
+                },
+                "amountETH": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "removeLiquidityWithPermit(address,address,uint256,uint256,uint256,address,uint256,bool,uint8,bytes32,bytes32)": {
+            "stateMutability": "nonpayable",
+            "code": "function removeLiquidityWithPermit(address tokenA, address tokenB, uint256 liquidity, uint256 amountAMin, uint256 amountBMin, address to, uint256 deadline, bool approveMax, uint8 v, bytes32 r, bytes32 s) external nonpayable returns (uint256 amountA, uint256 amountB)",
+            "inputs": {
+                "tokenA": {
+                    "type": "address"
+                },
+                "tokenB": {
+                    "type": "address"
+                },
+                "liquidity": {
+                    "type": "uint256"
+                },
+                "amountAMin": {
+                    "type": "uint256"
+                },
+                "amountBMin": {
+                    "type": "uint256"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                },
+                "approveMax": {
+                    "type": "bool"
+                },
+                "v": {
+                    "type": "uint8"
+                },
+                "r": {
+                    "type": "bytes32"
+                },
+                "s": {
+                    "type": "bytes32"
+                }
+            },
+            "outputs": {
+                "amountA": {
+                    "type": "uint256"
+                },
+                "amountB": {
+                    "type": "uint256"
+                }
+            }
+        },
+        "swapETHForExactTokens(uint256,address[],address,uint256)": {
+            "stateMutability": "payable",
+            "code": "function swapETHForExactTokens(uint256 amountOut, address[] path, address to, uint256 deadline) external payable returns (uint256[] amounts)",
+            "inputs": {
+                "amountOut": {
+                    "type": "uint256"
+                },
+                "path": {
+                    "type": "address[]"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amounts": {
+                    "type": "uint256[]"
+                }
+            }
+        },
+        "swapExactETHForTokens(uint256,address[],address,uint256)": {
+            "stateMutability": "payable",
+            "code": "function swapExactETHForTokens(uint256 amountOutMin, address[] path, address to, uint256 deadline) external payable returns (uint256[] amounts)",
+            "inputs": {
+                "amountOutMin": {
+                    "type": "uint256"
+                },
+                "path": {
+                    "type": "address[]"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amounts": {
+                    "type": "uint256[]"
+                }
+            }
+        },
+        "swapExactTokensForETH(uint256,uint256,address[],address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function swapExactTokensForETH(uint256 amountIn, uint256 amountOutMin, address[] path, address to, uint256 deadline) external nonpayable returns (uint256[] amounts)",
+            "inputs": {
+                "amountIn": {
+                    "type": "uint256"
+                },
+                "amountOutMin": {
+                    "type": "uint256"
+                },
+                "path": {
+                    "type": "address[]"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amounts": {
+                    "type": "uint256[]"
+                }
+            }
+        },
+        "swapExactTokensForTokens(uint256,uint256,address[],address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function swapExactTokensForTokens(uint256 amountIn, uint256 amountOutMin, address[] path, address to, uint256 deadline) external nonpayable returns (uint256[] amounts)",
+            "inputs": {
+                "amountIn": {
+                    "type": "uint256"
+                },
+                "amountOutMin": {
+                    "type": "uint256"
+                },
+                "path": {
+                    "type": "address[]"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amounts": {
+                    "type": "uint256[]"
+                }
+            }
+        },
+        "swapTokensForExactETH(uint256,uint256,address[],address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function swapTokensForExactETH(uint256 amountOut, uint256 amountInMax, address[] path, address to, uint256 deadline) external nonpayable returns (uint256[] amounts)",
+            "inputs": {
+                "amountOut": {
+                    "type": "uint256"
+                },
+                "amountInMax": {
+                    "type": "uint256"
+                },
+                "path": {
+                    "type": "address[]"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amounts": {
+                    "type": "uint256[]"
+                }
+            }
+        },
+        "swapTokensForExactTokens(uint256,uint256,address[],address,uint256)": {
+            "stateMutability": "nonpayable",
+            "code": "function swapTokensForExactTokens(uint256 amountOut, uint256 amountInMax, address[] path, address to, uint256 deadline) external nonpayable returns (uint256[] amounts)",
+            "inputs": {
+                "amountOut": {
+                    "type": "uint256"
+                },
+                "amountInMax": {
+                    "type": "uint256"
+                },
+                "path": {
+                    "type": "address[]"
+                },
+                "to": {
+                    "type": "address"
+                },
+                "deadline": {
+                    "type": "uint256"
+                }
+            },
+            "outputs": {
+                "amounts": {
+                    "type": "uint256[]"
+                }
+            }
+        }
+    },
+    "events": {},
+    "errors": {},
+    "path": "",
+    "name": "IUniswapV2Router01"
+}
